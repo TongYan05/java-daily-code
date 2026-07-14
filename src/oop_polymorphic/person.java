@@ -1,0 +1,48 @@
+package oop_polymorphic;
+
+public class person {
+    private String name;
+        private String username;
+    private String password;
+
+    public person() {}
+
+    public person(String name, String username, String password) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
+    }
+
+    //alt+insert,全选然后回车
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    public void work(){
+        System.out.println("每个人都要工作");
+    }
+
+
+
+}
