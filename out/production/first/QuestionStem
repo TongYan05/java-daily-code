@@ -1,0 +1,188 @@
+
+根据你所学的内容（抽象类、接口、继承、多态、封装、集合框架、instanceof、异常处理等），我为你设计了一道综合性极强的面向对象编程题：
+
+🎮 综合项目：智能游戏角色装备系统
+题目描述
+设计并实现一个智能游戏角色装备系统，需要整合面向对象编程的所有核心特性，包括抽象类、接口、多态、泛型、异常处理、集合框架等。
+
+需求说明
+一、角色体系
+抽象类 GameCharacter    ✔
+属性：姓名、等级、生命值、魔法值、攻击力、防御力    ✔
+构造方法：无参、全参    ✔
+抽象方法：specialAttack() - 特殊攻击    ✔
+普通方法：    ✔
+attack() - 普通攻击（输出攻击信息）    ✔
+takeDamage(int damage) - 受到伤害    ✔
+heal(int amount) - 恢复生命值    ✔
+levelUp() - 升级（提升各项属性）    ✔
+getter/setter    ✔
+
+接口 Skillable    ✔
+方法：    ✔
+learnSkill(String skillName) - 学习技能    ✔
+useSkill(String skillName) - 使用技能    ✔
+showSkills() - 显示已学技能列表    ✔
+
+接口 Equipable    ✔
+方法：    ✔
+equip(Equipment equipment) - 装备物品    ✔
+unequip(String equipmentSlot) - 卸下物品    ✔
+showEquippedItems() - 显示已装备物品    ✔
+
+具体角色类    ✔
+战士（Warrior）    ✔
+新增属性：怒气值    ✔
+实现 specialAttack() - 狂暴攻击（消耗怒气，大幅提升攻击力）    ✔
+实现 Skillable 和 Equipable 接口
+可装备：武器、盔甲、盾牌
+
+法师（Mage）
+新增属性：法术强度
+实现 specialAttack() - 魔法爆发（消耗魔法值，造成高额魔法伤害）
+实现 Skillable 和 Equipable 接口
+可装备：法杖、法袍、饰品
+
+刺客（Assassin）
+新增属性：暴击率
+实现 specialAttack() - 暗影突袭（高暴击伤害，有概率秒杀低血量敌人）
+实现 Skillable 和 Equipable 接口
+可装备：匕首、轻甲、披风
+
+二、装备体系
+抽象类 Equipment
+属性：名称、等级要求、价格、稀有度（普通/稀有/史诗/传说）
+抽象方法：applyEffect(GameCharacter character) - 应用装备效果
+普通方法：
+removeEffect(GameCharacter character) - 移除装备效果
+displayInfo() - 显示装备信息
+getter/setter
+
+接口 Durability
+方法：
+repair() - 修理装备
+checkDurability() - 检查耐久度
+damage(int amount) - 装备受损
+
+具体装备类
+武器（Weapon）
+新增属性：攻击力加成、攻击速度
+实现 Durability 接口
+重写 applyEffect() - 提升角色攻击力
+
+防具（Armor）
+新增属性：防御力加成、魔法抗性
+实现 Durability 接口
+重写 applyEffect() - 提升角色防御力和魔抗
+
+饰品（Accessory）
+新增属性：特殊效果描述（如"吸血5%"、"暴击+10%"）
+不实现 Durability 接口（饰品不会损坏）
+重写 applyEffect() - 根据特殊效果提升角色属性
+
+三、技能体系
+类 Skill
+属性：技能名称、技能等级、冷却时间、消耗魔法值、伤害倍率
+方法：
+canUse(int currentMana) - 判断是否可以使用（魔法值是否足够）
+calculateDamage(int baseAttack) - 计算技能伤害
+cooldown() - 冷却（减少冷却时间）
+getter/setter
+
+四、游戏管理系统
+类 GameManager 需实现以下功能：
+创建角色（支持三种类型）
+创建装备（支持三种类型）
+创建技能
+为角色分配技能
+为角色装备物品
+角色战斗模拟（两个角色对战，轮流攻击，直到一方生命值为0）
+角色升级系统
+装备强化系统（提升装备属性）
+按角色类型统计所有角色
+按稀有度统计所有装备
+显示所有角色状态
+显示所有装备信息
+保存游戏数据到文件（可选）
+从文件加载游戏数据（可选）
+
+五、异常处理
+自定义异常类
+InsufficientLevelException - 等级不足异常
+InsufficientManaException - 魔法值不足异常
+EquipmentSlotOccupiedException - 装备槽已被占用异常
+ItemNotFoundException - 物品不存在异常
+
+六、测试要求
+编写测试类，在 main 方法中完成以下演示：
+创建角色：至少创建6个角色（每种类型至少2个），放入 ArrayList<GameCharacter>
+创建装备：至少创建9件装备（每种类型至少3件，包含不同稀有度）
+创建技能：至少创建6个技能
+多态展示：遍历角色列表，调用每个角色的 specialAttack() 方法（体现多态）
+装备演示：
+为每个角色装备至少2件装备
+演示装备成功、装备槽占用、等级不足等情况
+使用 instanceof 判断装备类型并分类统计
+技能演示：
+为每个角色分配至少2个技能
+演示技能学习、使用、魔法值不足等情况
+战斗模拟：选择两个不同类型角色进行战斗，输出战斗过程
+升级演示：让至少2个角色升级，展示属性变化
+统计信息：
+使用 instanceof 统计各类型角色数量
+按稀有度统计装备数量
+显示所有角色的平均等级
+折扣系统（扩展）：创建一个 Shop 类，根据角色等级给予不同折扣购买装备
+
+七、技术要求
+必须使用：
+✅ 封装（private + getter/setter）
+✅ 继承（extends）
+✅ 多态（方法重写、父类引用指向子类对象、接口回调）
+✅ 抽象类（abstract class）
+✅ 接口（interface，多实现）
+✅ 集合框架（ArrayList、HashMap）
+✅ instanceof 关键字
+✅ 构造方法重载
+✅ super 和 this 关键字
+✅ 自定义异常处理
+✅ 泛型（Generic）
+可选扩展：
+Lambda 表达式和 Stream API
+文件读写（数据持久化）
+随机数生成（战斗伤害浮动、暴击判定）
+枚举（Enum）管理稀有度、装备槽位
+
+八、类图结构参考
+GameCharacter (abstract)
+├── Warrior
+├── Mage
+└── Assassin
+
+Equipment (abstract)
+├── Weapon
+├── Armor
+└── Accessory
+
+Skillable (interface)
+Equipable (interface)
+Durability (interface)
+
+Skill
+GameManager
+
+提交内容
+完整的源代码（每个类单独文件）
+运行结果截图（展示所有功能）
+简要说明文档（描述你的设计思路和遇到的难点）
+
+💡 这道题考察的核心能力
+抽象思维：如何设计合理的抽象类和接口
+多态应用：父类引用、接口回调、方法重写
+异常处理：自定义异常、try-catch-finally
+集合操作：ArrayList、HashMap 的使用和遍历
+类型判断：instanceof 的正确使用场景
+代码组织：多个类之间的协作关系
+业务逻辑：战斗系统、装备系统、技能系统的实现
+
+这道题比你之前做过的图书馆系统、员工薪资系统、动物园系统都要复杂，涉及更多的类和更复杂的交互逻辑。加油！如果需要验证代码或遇到难题，随时找我！ 🚀

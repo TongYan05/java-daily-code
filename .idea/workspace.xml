@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95a4c24b-dfc3-4ee9-9655-81b5afb1bea0" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DBNavigator.Project.Workspace.Settings">
+    <assistant-settings>
+      <credential-settings>
+        <credentials />
+      </credential-settings>
+      <profile-settings>
+        <profiles />
+      </profile-settings>
+      <mcp-server-settings>
+        <workspace-integration value="false" />
+        <mcp-servers />
+        <mcp-tool-approvals />
+      </mcp-server-settings>
+    </assistant-settings>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\新建文件夹\maven\apache-maven-3.9.16" />
+        <option name="localRepository" value="D:\新建文件夹\maven\maven-LocalRepository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\新建文件夹\maven\apache-maven-3.9.16\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3BnlMD9Cqk5wRb063gOmI94jfIo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Cinema_test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Collection3_set.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exception1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exception2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exception3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exception4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.File3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.File4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.File5.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloWorld.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JDK8Added.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Map1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Map2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Map3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Stream1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Stream_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Summary.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.abstract_practice1.test (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.abstract_practice1.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.advancedSstarter.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.code.executor&quot;: &quot;Run&quot;,
+    &quot;Application.collection1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.collection2_list.executor&quot;: &quot;Run&quot;,
+    &quot;Application.comprehensive_use.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.conclusion.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.file.executor&quot;: &quot;Run&quot;,
+    &quot;Application.file2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.gebericity4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.genericity5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.genericty1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.graphing.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.intelligent.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.interface1.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.oop_polymorphic.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opp_polyporhic_comprehensivePractice3.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.opp_polyporhic_gamedesign.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.overAll.executor&quot;: &quot;Run&quot;,
+    &quot;Application.phrasalScrutiny.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practice1.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practice2Comprehensive.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.preview.executor&quot;: &quot;Run&quot;,
+    &quot;Application.review.executor&quot;: &quot;Run&quot;,
+    &quot;Application.starter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.trail.executor&quot;: &quot;Run&quot;,
+    &quot;Application.zooTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/新建文件夹/java/javacode/first&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/新建文件夹/java/javacode/first/demo-module/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\新建文件夹\java\javacode\first\src\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\新建文件夹\java\javacode\first\src" />
+      <recent name="D:\新建文件夹\java\javacode\first" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="map1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.overAll">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="demo-module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.anu.basic.code" />
+      <module name="first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.anu.basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="collection2_list" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ANU7710.collection2_list" />
+      <module name="first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ANU7710.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetcode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ANU7710.leetcode" />
+      <module name="first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ANU7710.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="overAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="overAll" />
+      <module name="first" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.overAll" />
+        <item itemvalue="Application.code" />
+        <item itemvalue="Application.collection2_list" />
+        <item itemvalue="Application.leetcode" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95a4c24b-dfc3-4ee9-9655-81b5afb1bea0" name="Changes" comment="" />
+      <created>1775132666351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775132666351</updated>
+      <workItem from="1775132668749" duration="652000" />
+      <workItem from="1775144401474" duration="769000" />
+      <workItem from="1775177854809" duration="1855000" />
+      <workItem from="1775179728442" duration="515000" />
+      <workItem from="1775180265477" duration="64000" />
+      <workItem from="1775180345615" duration="2127000" />
+      <workItem from="1775182484440" duration="7294000" />
+      <workItem from="1775217699742" duration="264000" />
+      <workItem from="1775263242152" duration="4308000" />
+      <workItem from="1775267588006" duration="2182000" />
+      <workItem from="1775292154337" duration="2279000" />
+      <workItem from="1775303207317" duration="934000" />
+      <workItem from="1775352702853" duration="600000" />
+      <workItem from="1775353311359" duration="4013000" />
+      <workItem from="1775386504037" duration="261000" />
+      <workItem from="1775444496387" duration="6226000" />
+      <workItem from="1775465413238" duration="854000" />
+      <workItem from="1775529712474" duration="5967000" />
+      <workItem from="1775539858422" duration="7645000" />
+      <workItem from="1775555901923" duration="3481000" />
+      <workItem from="1775611874935" duration="11177000" />
+      <workItem from="1775625809189" duration="363000" />
+      <workItem from="1775626376978" duration="288000" />
+      <workItem from="1775643205809" duration="3760000" />
+      <workItem from="1775698237360" duration="1501000" />
+      <workItem from="1775699753318" duration="24000" />
+      <workItem from="1775699794598" duration="20733000" />
+      <workItem from="1775744590172" duration="392000" />
+      <workItem from="1775783039260" duration="5681000" />
+      <workItem from="1775800382167" duration="12611000" />
+      <workItem from="1775825868423" duration="3973000" />
+      <workItem from="1775876773790" duration="450000" />
+      <workItem from="1775877234007" duration="20857000" />
+      <workItem from="1775957493261" duration="263000" />
+      <workItem from="1775957767226" duration="10143000" />
+      <workItem from="1775996431179" duration="2596000" />
+      <workItem from="1776087404168" duration="904000" />
+      <workItem from="1776088977707" duration="640000" />
+      <workItem from="1776091952074" duration="2863000" />
+      <workItem from="1776142017247" duration="22961000" />
+      <workItem from="1776234331058" duration="14610000" />
+      <workItem from="1776301489762" duration="18284000" />
+      <workItem from="1776342778149" duration="1766000" />
+      <workItem from="1776353417683" duration="2606000" />
+      <workItem from="1776390224414" duration="17466000" />
+      <workItem from="1776504089097" duration="8738000" />
+      <workItem from="1776565005467" duration="10191000" />
+      <workItem from="1776609144434" duration="2286000" />
+      <workItem from="1776659261260" duration="14295000" />
+      <workItem from="1776686956793" duration="7584000" />
+      <workItem from="1776741318366" duration="23125000" />
+      <workItem from="1776819781286" duration="11845000" />
+      <workItem from="1776940509541" duration="12663000" />
+      <workItem from="1776994650311" duration="6000" />
+      <workItem from="1776994668397" duration="17804000" />
+      <workItem from="1777080512486" duration="11247000" />
+      <workItem from="1777095486512" duration="7893000" />
+      <workItem from="1777181950688" duration="12828000" />
+      <workItem from="1777282223501" duration="607000" />
+      <workItem from="1777295415488" duration="711000" />
+      <workItem from="1777428332801" duration="7875000" />
+      <workItem from="1777520620427" duration="4612000" />
+      <workItem from="1777536864580" duration="8989000" />
+      <workItem from="1777615901866" duration="15351000" />
+      <workItem from="1777650145243" duration="977000" />
+      <workItem from="1777686345015" duration="68000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/first$code.ic" NAME="code Coverage Results" MODIFIED="1775701613636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.anu.basic.*</FILTER>
+    </SUITE>
+  </component>
+</project>
