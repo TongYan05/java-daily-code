@@ -8,7 +8,6 @@ import java.util.*;
 public class Map3 {
     public static void main(String[] args) {
 
-
         vote();
         vote1();
         option();

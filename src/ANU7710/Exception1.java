@@ -8,7 +8,6 @@ public class Exception1 {
         //异常————运行时异常(runtimeException)and编译时异常，alte+回车，选第一个或者第二个用来解决
 
 
-
         //1. 异常是什么？
         //- 异常是代码在编译或者执行的过程中可能出现的错误。
         //
@@ -21,50 +20,40 @@ public class Exception1 {
         //- 用来查找bug；可以作为方法内部的特殊返回值，通知上层调用者底层的执行情况。
 
 
+//        System.out.println("程序开始");
+//        result(10,0);
+//        System.out.println("程序结束");//运行时异常不阻断后面代码的运行，编译时异常会阻断
 
         System.out.println("程序开始");
-        result(10,0);
-        System.out.println("程序结束");//运行时异常不阻断后面代码的运行，编译时异常会阻断
-
-
-
-//        try {
-//            System.out.println(finalpriec(100,-0.9));
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
-
+        System.out.println(finalpriec(100, -0.9));
+        System.out.println("程序结束");
 
 //        System.out.println("程序开始");
 //        System.out.println(finalpriec2(100,-0.9));
 //        System.out.println("程序结束");
 
 
-
     }
 
 
-    public static int result(int a,int b) throws java.lang.Exception {
-        if(b==0){
-            throw new RuntimeException("除数不能为0");//编译时异常更明显
-        }
-        return a/b;
+    public static int result(int a, int b) {
+        if (b == 0) throw new RuntimeException("除数不能为0");
+        return a / b;
     }
 
-//    public static double finalpriec(double orginalprice,double discount) throws Exception {
-//        if(discount<0||discount>1){
-//            throw new Exception("折扣值必须在0-1之间");
-//        }
-//        else return orginalprice*discount;
-//    }
+    public static double finalpriec(double orginalprice, double discount) throws Exception {
+        if (discount < 0 || discount > 1) {
 
-
-    public static double finalpriec2(double orginalprice,double discount) throws Exception {
-        if(discount<0||discount>1){
             throw new Exception("折扣值必须在0-1之间");
-        }
-        else return orginalprice*discount;
+
+        } else return orginalprice * discount;
+    }
+
+
+    public static double finalpriec2(double orginalprice, double discount) throws Exception {
+        if (discount < 0 || discount > 1) {
+            throw new Exception("折扣值必须在0-1之间");
+        } else return orginalprice * discount;
     }
 
 }

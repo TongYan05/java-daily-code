@@ -3,7 +3,7 @@ package ANU7710;
 import java.util.Objects;
 
 public class Collection3_employee implements Comparable<Collection3_employee> {
-
+//The content inside <> is the type this object can compare with.
 
     private String name;
     private double salary;
@@ -38,15 +38,23 @@ public class Collection3_employee implements Comparable<Collection3_employee> {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Collection3_employee that = (Collection3_employee) o;
+        if (o == null || this.getClass() != o.getClass()) return false;
+        //we have to judge if object is null, if it is, null.getclass() will throw exception.
+        Collection3_employee that = (Collection3_employee) o;//type casting.
         return Double.compare(salary, that.salary) == 0 && Objects.equals(name, that.name);
+        //Double.compare is a static method, if two values are equal, then return 0
+        //if the first value less than the second one, return negative number
+        //if the first value greater than the second one, return negative number
+        //Objects.equals() return true if two values are both null or equal
     }
+//    Good catch. In Java, when you call a method without writing an object before it, Java assumes:
+//            this.
 
     @Override
     public int hashCode() {
         return Objects.hash(name, salary);
     }
+
 
 //alt+enter重写，然后制定规则
     //规定：如果左边大于右边，返回1

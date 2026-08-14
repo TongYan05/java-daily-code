@@ -9,7 +9,7 @@ public class Exception3 {
         //- 通过throw new 异常类(xxx)来创建异常对象并抛出。
         //特点：编译阶段不报错，运行时才可能出现！提醒不属于激进型。
 
-        System.out.println(totalNumber(-5,10));//运行时异常
+//        System.out.println(totalNumber(-5,10));//运行时异常
 
 
 

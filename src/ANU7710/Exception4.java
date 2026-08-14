@@ -35,11 +35,9 @@ public class Exception4 {
             System.out.println("请输入数字！");
         }
         System.out.println("程序结束");
-
     }
 
     }
-
     public static double sonheight(){
         Scanner input=new Scanner(System.in);
         System.out.println("请输入您的身高：");

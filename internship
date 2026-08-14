@@ -1,0 +1,510 @@
+# Data Structures Online Test — Knowledge Points to Know
+
+## 1. Big-O / Complexity
+- [ ] Meaning of **O(1), O(log n), O(n), O(n log n), O(n²)**
+- [ ] Time complexity vs space complexity
+- [ ] Best case / average case / worst case
+- [ ] Identify complexity from code
+- [ ] Complexity of loops
+- [ ] Nested loops
+- [ ] Sequential loops
+- [ ] Logarithmic loops
+- [ ] Complexity of common data-structure operations
+- [ ] Amortized complexity
+- [ ] Why dynamic arrays have **O(1) amortized append**
+
+### Memorise
+| Complexity | Name |
+|---|---|
+| O(1) | Constant |
+| O(log n) | Logarithmic |
+| O(n) | Linear |
+| O(n log n) | Linearithmic |
+| O(n²) | Quadratic |
+
+---
+
+# 2. Array / Vector / ArrayList
+
+- [ ] Contiguous memory
+- [ ] Indexing
+- [ ] Random access
+- [ ] `get(i)` → **O(1)**
+- [ ] `set(i)` → **O(1)**
+- [ ] Search → **O(n)**
+- [ ] Insert at beginning → **O(n)**
+- [ ] Insert in middle → **O(n)**
+- [ ] Delete at beginning → **O(n)**
+- [ ] Delete in middle → **O(n)**
+- [ ] Append at end → **O(1) amortized**
+- [ ] Resize / capacity
+- [ ] Difference between size and capacity
+- [ ] Advantages/disadvantages of arrays
+- [ ] Static array vs dynamic array
+
+---
+
+# 3. Linked List
+
+- [ ] Node
+- [ ] Data + pointer/reference
+- [ ] Head
+- [ ] Tail
+- [ ] Singly linked list
+- [ ] Doubly linked list
+- [ ] `next`
+- [ ] `prev`
+- [ ] Traversal
+- [ ] Search → **O(n)**
+- [ ] Access by index → **O(n)**
+- [ ] Insert at known node → **O(1)**
+- [ ] Delete at known node → **O(1)**
+- [ ] Insert/remove at head → **O(1)**
+- [ ] Insert/remove at tail:
+  - singly linked list depends on implementation
+  - doubly linked list with tail → **O(1)**
+- [ ] Array vs Linked List
+- [ ] Memory overhead of pointers
+
+---
+
+# 4. Stack
+
+### Concept
+- [ ] **LIFO — Last In, First Out**
+
+### Operations
+- [ ] `push`
+- [ ] `pop`
+- [ ] `peek` / `top`
+- [ ] `isEmpty`
+
+### Complexity
+- [ ] Push → **O(1)**
+- [ ] Pop → **O(1)**
+- [ ] Peek → **O(1)**
+
+### Applications
+- [ ] Function call stack
+- [ ] Undo
+- [ ] Parentheses matching
+- [ ] DFS
+- [ ] Expression evaluation
+
+---
+
+# 5. Queue
+
+### Concept
+- [ ] **FIFO — First In, First Out**
+
+### Operations
+- [ ] `enqueue`
+- [ ] `dequeue`
+- [ ] `front`
+- [ ] `isEmpty`
+
+### Complexity
+- [ ] Enqueue → **O(1)**
+- [ ] Dequeue → **O(1)**
+- [ ] Front → **O(1)**
+
+### Know
+- [ ] Queue using array
+- [ ] Queue using linked list
+- [ ] Circular queue
+- [ ] Why removing from the beginning of a vector can be **O(n)**
+
+---
+
+# 6. Deque
+
+### Concept
+- [ ] **Double-ended queue**
+- [ ] Front
+- [ ] Back
+
+### Operations
+- [ ] Add front → **O(1)**
+- [ ] Remove front → **O(1)**
+- [ ] Add back → **O(1)**
+- [ ] Remove back → **O(1)**
+
+### Know the difference
+
+| Structure | Front | Back |
+|---|---|---|
+| Stack | — | Add/remove |
+| Queue | Remove | Add |
+| Deque | Add/remove | Add/remove |
+| Vector | Expensive | Efficient |
+
+---
+
+# 7. HashMap / Hash Table
+
+- [ ] Key-value pair
+- [ ] Hash function
+- [ ] Hash code
+- [ ] Bucket
+- [ ] Collision
+- [ ] Collision resolution
+- [ ] Chaining
+- [ ] Open addressing
+- [ ] Load factor
+- [ ] Rehashing
+- [ ] `put`
+- [ ] `get`
+- [ ] `remove`
+- [ ] `containsKey`
+
+### Complexity
+- [ ] Average search → **O(1)**
+- [ ] Average insertion → **O(1)**
+- [ ] Average deletion → **O(1)**
+- [ ] Worst case → **O(n)**
+
+### Important
+- [ ] HashMap does not normally guarantee sorted order
+- [ ] Keys must have appropriate `equals()` / `hashCode()`
+- [ ] Understand why collisions happen
+
+---
+
+# 8. Trees — Basics
+
+- [ ] Node
+- [ ] Root
+- [ ] Parent
+- [ ] Child
+- [ ] Sibling
+- [ ] Leaf
+- [ ] Edge
+- [ ] Path
+- [ ] Subtree
+- [ ] Depth
+- [ ] Height
+- [ ] Degree
+- [ ] Ancestor
+- [ ] Descendant
+
+### Tree properties
+- [ ] Binary tree
+- [ ] Each node has at most 2 children
+- [ ] Left child
+- [ ] Right child
+- [ ] Full binary tree
+- [ ] Complete binary tree
+- [ ] Perfect binary tree
+- [ ] Balanced tree
+- [ ] Height of a tree
+
+---
+
+# 9. Tree Traversal
+
+Know the order **exactly**.
+
+### Preorder
+```text
+Root → Left → Right
+```
+
+### Inorder
+```text
+Left → Root → Right
+```
+
+### Postorder
+```text
+Left → Right → Root
+```
+
+### Level-order
+```text
+Level by level
+```
+
+- [ ] Be able to perform each traversal on a given tree
+- [ ] Know which data structure is commonly used:
+  - DFS → stack / recursion
+  - BFS / level-order → queue
+
+---
+
+# 10. Binary Search
+
+- [ ] Requires **sorted data**
+- [ ] Divide search space in half
+- [ ] `low`
+- [ ] `high`
+- [ ] `mid`
+- [ ] Compare target with middle element
+- [ ] Search left/right half
+- [ ] Iterative binary search
+- [ ] Recursive binary search
+- [ ] Time → **O(log n)**
+- [ ] Space:
+  - iterative → **O(1)**
+  - recursive → **O(log n)** call stack
+
+---
+
+# 11. Sorting
+
+Know the basic idea + complexity.
+
+### Bubble Sort
+- [ ] Adjacent elements
+- [ ] Repeated swapping
+- [ ] Average → **O(n²)**
+- [ ] Worst → **O(n²)**
+
+### Selection Sort
+- [ ] Find minimum
+- [ ] Put it in correct position
+- [ ] **O(n²)**
+
+### Insertion Sort
+- [ ] Build sorted portion
+- [ ] Insert each element
+- [ ] Best → **O(n)**
+- [ ] Average/worst → **O(n²)**
+
+### Merge Sort
+- [ ] Divide
+- [ ] Sort halves
+- [ ] Merge
+- [ ] **O(n log n)**
+- [ ] Extra space → **O(n)**
+
+### Quick Sort
+- [ ] Pivot
+- [ ] Partition
+- [ ] Recursion
+- [ ] Average → **O(n log n)**
+- [ ] Worst → **O(n²)**
+
+### Know
+- [ ] Stable vs unstable sorting
+- [ ] In-place vs extra memory
+- [ ] Compare sorting algorithms
+
+---
+
+# 12. Recursion
+
+- [ ] Base case
+- [ ] Recursive case
+- [ ] Recursive call
+- [ ] Call stack
+- [ ] Stack overflow
+- [ ] Trace recursive functions
+- [ ] Calculate recursive complexity
+- [ ] Recursion with arrays
+- [ ] Recursion with trees
+- [ ] Recursion in merge sort / quick sort
+- [ ] Recursion vs iteration
+
+---
+
+# 13. Heap
+
+### Structure
+- [ ] Complete binary tree
+- [ ] Min heap
+- [ ] Max heap
+- [ ] Parent-child relationship
+- [ ] Heap property
+
+### Operations
+- [ ] Insert
+- [ ] Remove root
+- [ ] Peek root
+- [ ] Heapify
+- [ ] Build heap
+
+### Complexity
+- [ ] Peek → **O(1)**
+- [ ] Insert → **O(log n)**
+- [ ] Remove root → **O(log n)**
+- [ ] Build heap → **O(n)**
+
+---
+
+# 14. Priority Queue
+
+- [ ] Difference between Queue and Priority Queue
+- [ ] Highest/lowest priority removed first
+- [ ] Usually implemented using a heap
+- [ ] Insert → **O(log n)**
+- [ ] Peek → **O(1)**
+- [ ] Remove → **O(log n)**
+
+---
+
+# 15. Binary Search Tree — BST
+
+### Property
+For every node:
+
+```text
+left < node < right
+```
+
+- [ ] Search
+- [ ] Insert
+- [ ] Delete
+- [ ] Find minimum
+- [ ] Find maximum
+- [ ] Inorder traversal
+- [ ] Balanced BST
+- [ ] Unbalanced BST
+
+### Complexity
+Balanced:
+- [ ] Search → **O(log n)**
+- [ ] Insert → **O(log n)**
+- [ ] Delete → **O(log n)**
+
+Worst case:
+- [ ] Search → **O(n)**
+- [ ] Insert → **O(n)**
+- [ ] Delete → **O(n)**
+
+### BST deletion
+Know the 3 cases:
+
+- [ ] Leaf node
+- [ ] One child
+- [ ] Two children
+
+---
+
+# 16. Segment Tree — Basic Level
+
+You said you haven't learned this, so for the test know:
+
+- [ ] What a Segment Tree is
+- [ ] Range query
+- [ ] Range sum
+- [ ] Range minimum/maximum
+- [ ] Tree represents intervals/ranges
+- [ ] Build tree
+- [ ] Query range
+- [ ] Update element
+- [ ] Query → **O(log n)**
+- [ ] Update → **O(log n)**
+- [ ] Build → **O(n)**
+
+---
+
+# 17. VERY IMPORTANT Comparisons
+
+Be able to answer questions like:
+
+### Array vs Linked List
+- [ ] Random access
+- [ ] Insertion
+- [ ] Deletion
+- [ ] Memory
+- [ ] Cache locality
+
+### Stack vs Queue
+- [ ] LIFO vs FIFO
+
+### Queue vs Deque
+- [ ] One-ended restriction vs both ends
+
+### Vector vs Deque
+- [ ] Random access
+- [ ] Front insertion/deletion
+- [ ] Back insertion/deletion
+
+### HashMap vs BST
+- [ ] Average lookup
+- [ ] Ordering
+- [ ] Worst case
+- [ ] Range queries
+
+### Heap vs BST
+- [ ] Heap gives fast min/max
+- [ ] BST provides ordered searching
+- [ ] Heap is not fully sorted
+
+---
+
+# 18. Operation Complexity — MEMORISE THIS
+
+| Data Structure | Access | Search | Insert | Delete |
+|---|---:|---:|---:|---:|
+| Array | O(1) | O(n) | O(n) | O(n) |
+| Vector | O(1) | O(n) | O(n) | O(n) |
+| Linked List | O(n) | O(n) | O(1)* | O(1)* |
+| Stack | — | — | O(1) | O(1) |
+| Queue | — | — | O(1) | O(1) |
+| Deque | O(1) | O(n) | O(1) | O(1) |
+| HashMap | — | O(1)** | O(1)** | O(1)** |
+| Heap | — | O(n) | O(log n) | O(log n) |
+| BST | O(log n)*** | O(log n)*** | O(log n)*** | O(log n)*** |
+
+\* when operating at a known node/position
+\** average case
+\*** balanced BST
+
+---
+
+# 19. Test Question Patterns
+
+Be prepared for:
+
+- [ ] "Which data structure supports X in O(1)?"
+- [ ] "Which operation is O(n)?"
+- [ ] "Which data structure uses LIFO?"
+- [ ] "Which uses FIFO?"
+- [ ] "Which allows insertion/deletion at both ends?"
+- [ ] "Which supports random access?"
+- [ ] "Which requires sorted data?"
+- [ ] "What is the complexity of this code?"
+- [ ] "What is the output of this traversal?"
+- [ ] "What happens after this insertion/deletion?"
+- [ ] "Which structure is best for this situation?"
+- [ ] "Which statement about this data structure is true/false?"
+- [ ] Compare two data structures based on complexity
+- [ ] Trace Stack/Queue operations
+- [ ] Trace Binary Search
+- [ ] Trace sorting algorithms
+- [ ] Trace recursion
+- [ ] Identify tree properties
+- [ ] Identify heap/BST properties
+
+---
+
+# Priority If You Are REALLY Short on Time
+
+### 🔴 MUST KNOW
+1. **Big-O**
+2. **Array / Vector**
+3. **Linked List**
+4. **Stack**
+5. **Queue**
+6. **Deque**
+7. **HashMap**
+8. **Tree basics**
+9. **Tree traversal**
+10. **Binary Search**
+11. **Sorting complexity**
+12. **Heap / Priority Queue**
+13. **BST**
+
+### 🟡 SECOND PRIORITY
+14. Recursion
+15. Segment Tree
+
+### The single most important thing
+
+For **every data structure**, know these four things:
+
+> **What is it? → What operations does it support? → What is each operation's Big-O? → When should I use it?**
+
+If you can answer those four for **Array, Vector, Linked List, Stack, Queue, Deque, HashMap, Tree, Heap, BST, and Segment Tree**, you'll cover a very large portion of the likely online-test knowledge.
