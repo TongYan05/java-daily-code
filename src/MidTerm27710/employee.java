@@ -1,15 +1,18 @@
-package OOM;
+package MidTerm27710;
+
+import OOM.Employee;
 
 import java.util.Objects;
 
-public class Employee {
+public class employee implements test{
+
     private String name;
     private static double salary;
     private final String description;
-    public Employee(){
+    public employee(){
         description="ANU senior lecturer";//final关键词修饰的，最起码也要在构造结束的时候赋值
     }
-    public Employee(String name, double salary, String description){
+    public employee(String name, double salary, String description){
         this.name=name;
         this.salary=salary;
         this.description=description;
@@ -24,10 +27,10 @@ public class Employee {
     //这个getter setter其实是多余的，因为static变量用 类名.变量名进行调用，进行增删改查
     //如果这样想我就错了，因为salary是private所以需要方法来调用
     public static void setSalary(double salary){
-        Employee.salary=salary;
+        employee.salary=salary;
     }
     public static double getSalary(){
-        return Employee.salary;
+        return employee.salary;
     }
     public String getDescription(){
         return this.description;
@@ -47,10 +50,31 @@ public class Employee {
         //比较class
         if(this.getClass()!=otherObject.getClass()) return false;
         //cast转换类型
-        Employee employee=(Employee) otherObject;
+        employee e=(employee) otherObject;
         //比较内容
-        return Objects.equals(this.name,employee.name) && Objects.equals(this.description,employee.description);
+        return Objects.equals(this.name,e.name) && Objects.equals(this.description,e.description);
     }
+
+
+    @Override
+    public void cat1(){
+        System.out.println("cat1");
+    }
+    @Override
+    public void dog6() {
+        System.out.println("d0g666");
+    }
+
+    @Override
+    public int num(int x) {
+        return -1;
+    }
+
+    @Override
+    public void dog1(){
+        System.out.println("dog1");
+    }
+
 
 
 

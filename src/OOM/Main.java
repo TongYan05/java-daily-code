@@ -1,6 +1,7 @@
 package OOM;
 
 import java.lang.invoke.SwitchPoint;
+import java.util.List;
 
 import static OOM.Employee.getSalary;
 import static OOM.Employee.setSalary;
@@ -29,6 +30,10 @@ public class Main {
         Employee e3=new Manager("albetor",20000,"anu senior lecturer",6000);
         System.out.println(e2==e3);//比较identity
         System.out.println(e2.equals(e3));//比较state
+
+        Integer x=null;
+        int y=x;
+        System.out.println(y);
 
     }
 }
