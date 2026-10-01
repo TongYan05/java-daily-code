@@ -4,10 +4,10 @@ import OOM.Employee;
 
 import java.util.Objects;
 
-public class employee implements test{
+public class employee implements test,Comparable<employee>{
 
     private String name;
-    private static double salary;
+    private  double salary;
     private final String description;
     public employee(){
         description="ANU senior lecturer";//final关键词修饰的，最起码也要在构造结束的时候赋值
@@ -18,6 +18,7 @@ public class employee implements test{
         this.description=description;
     }
 
+
     public void setName(String newName){
         this.name=newName;
     }
@@ -26,11 +27,11 @@ public class employee implements test{
     }
     //这个getter setter其实是多余的，因为static变量用 类名.变量名进行调用，进行增删改查
     //如果这样想我就错了，因为salary是private所以需要方法来调用
-    public static void setSalary(double salary){
-        employee.salary=salary;
+    public  void setSalary(double salary){
+        this.salary=salary;
     }
-    public static double getSalary(){
-        return employee.salary;
+    public  double getSalary(){
+        return this.salary;
     }
     public String getDescription(){
         return this.description;
@@ -76,6 +77,16 @@ public class employee implements test{
     }
 
 
+    @Override
+    public int compareTo(employee objects){
+        if(objects==null) return -1;
+        return Double.compare(this.salary,objects.salary);
+    }
+
+    @Override
+    public String toString(){
+        return name+" "+salary+" "+description;
+    }
 
 
 
